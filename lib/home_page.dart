@@ -126,7 +126,7 @@ class HomePage extends StatelessWidget {
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
-                        shadowColor: Colors.transparent,
+                        shadowColor: Colors.black,
                         padding: const EdgeInsets.all(0.0),
                       ),
                       child: DecoratedBox(
