@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tela/constants.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -27,7 +28,7 @@ class HomePage extends StatelessWidget {
               child: Container(
                 //RETANGULO BRANCO
                 width: 400,
-                height: 600,
+                height: 700,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -43,18 +44,18 @@ class HomePage extends StatelessWidget {
                     Text(
                       "Login",
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 35,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 40),
+                    SizedBox(height: 50),
                     SizedBox(
                       //username
                       width: 305,
                       child: Text(
                         "Username",
                         style: TextStyle(
-                          color: const Color.fromARGB(255, 192, 192, 192),
+                          color: const Color.fromARGB(255, 134, 131, 131),
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -69,7 +70,7 @@ class HomePage extends StatelessWidget {
                       width: 300,
                       height: 2,
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 196, 194, 194),
+                        color: const Color.fromARGB(255, 134, 131, 131),
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(5),
                           topRight: Radius.circular(6),
@@ -86,7 +87,7 @@ class HomePage extends StatelessWidget {
                       child: Text(
                         "Password",
                         style: TextStyle(
-                          color: const Color.fromARGB(255, 192, 192, 192),
+                          color: const Color.fromARGB(255, 134, 131, 131),
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -101,7 +102,7 @@ class HomePage extends StatelessWidget {
                       width: 300,
                       height: 2,
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 196, 194, 194),
+                        color: const Color.fromARGB(255, 134, 131, 131),
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(5),
                           topRight: Radius.circular(6),
@@ -116,8 +117,92 @@ class HomePage extends StatelessWidget {
                         "Forgot Password?",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          color: Color.fromARGB(255, 196, 194, 194),
+                          color: Color.fromARGB(255, 134, 131, 131),
                         ),
+                      ),
+                    ),
+                    SizedBox(height: 25),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
+                        padding: const EdgeInsets.all(0.0),
+                      ),
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(25),
+                            topRight: Radius.circular(25),
+                            bottomLeft: Radius.circular(25),
+                            bottomRight: Radius.circular(25),
+                          ),
+                          gradient: LinearGradient(
+                            begin: Alignment.centerRight,
+                            end: Alignment.centerLeft,
+                            colors: <Color>[
+                              Color.fromRGBO(231, 57, 245, 1),
+                              Color.fromRGBO(103, 190, 217, 1),
+                            ],
+                            stops: [0.1, 0.8],
+                          ),
+                        ),
+                        child: Container(
+                          width: 300,
+                          height: 45,
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: 12,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Login",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 35),
+                    Text(
+                      "Or sign Up Using",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        color: Color.fromARGB(255, 134, 131, 131),
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Center(
+                      child: SizedBox(
+                        width: 150,
+                        child: Row(
+                          children: [
+                            Image.network(
+                              Constants.logoFacebook,
+                              height: 50,
+                              width: 50,
+                            ),
+                            // SizedBox(width: 5),
+                            Image.network(
+                              height: 50,
+                              width: 50,
+                              Constants.logoTwitter,
+                            ),
+                            Image.network(
+                              height: 50,
+                              width: 50,
+                              Constants.logoGoogle,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 70),
+                    Text(
+                      "Or Sign Up Using",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        color: Color.fromARGB(255, 134, 131, 131),
                       ),
                     ),
                   ],
