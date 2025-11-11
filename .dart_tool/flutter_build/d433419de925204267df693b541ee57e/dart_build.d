@@ -1,0 +1,1 @@
+ /home/ricardo/Documentos/Code/Flutter/tela/.dart_tool/flutter_build/d433419de925204267df693b541ee57e/dart_build_result.json: 
